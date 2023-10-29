@@ -1,4 +1,4 @@
-import { ChatBox } from "@/components/ui/chat/chatBox"
+import { ChatBox } from "@/components/chat/chatBot"
 
 export default function Home() {
   return (
