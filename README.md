@@ -1,4 +1,4 @@
-# LangChain Chat Starter Kit
+# AI Assistant using LangChain Chat (Starter)
 
 The motivation behind this project was a perceived complexity in existing templates and starter kits for langchain chatbots. With a desire for simplicity, I've constructed this kit as an antidote to that complexity! This project serves as a foundation or a source of inspiration for your own endeavors.
 
