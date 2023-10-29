@@ -7,9 +7,18 @@ import { MessageInput } from "./messageInput"
 import { fetchEventSource } from "@microsoft/fetch-event-source"
 
 export function ChatBox() {
+  const currentTime = new Date().getHours();
+  let greeting;
+  if (currentTime < 12) {
+    greeting = "Good morning! What can I do for you today?";
+  } else if (currentTime < 18) {
+    greeting = "Good afternoon! What can I do for you today?";
+  } else {
+    greeting = "Good evening! What can I do for you today?";
+  }
   const [oaiKey, setOaiKey] = useState("")
   const [messages, setMessages] = useState([
-    { sender: "assistant", text: "Good morning! What can I do for you today?" },
+    { sender: "assistant", text: `Good ${greeting}! What can I do for you today?` },
   ])
   const [inputText, setInputText] = useState("")
   const [isLoading, setIsLoading] = useState(false)
