@@ -21,7 +21,7 @@ git clone https://github.com/JohnRSandoval/NEXT.JS-LangChain-Starter-Kit.git
 2. Navigate to the cloned folder.
 
 ```bash
-cd NEXT.JS-LangChain-Starter-Kit
+cd ai-assistant
 ```
 
 3. Use your preferred package manager to install packages.
