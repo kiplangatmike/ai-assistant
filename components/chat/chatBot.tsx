@@ -18,7 +18,7 @@ export function ChatBox() {
   }
   const [oaiKey, setOaiKey] = useState("")
   const [messages, setMessages] = useState([
-    { sender: "assistant", text: `Good ${greeting}! What can I do for you today?` },
+    { sender: "assistant", text: `${greeting}` },
   ])
   const [inputText, setInputText] = useState("")
   const [isLoading, setIsLoading] = useState(false)
