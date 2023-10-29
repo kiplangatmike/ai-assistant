@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from "react"
 import clsx from "clsx"
+import { Input } from "../input"
 
 //@ts-ignore
 export function OpenaiAPIKeyInput({ oaiKey, setOaiKey }) {
@@ -36,7 +37,7 @@ export function OpenaiAPIKeyInput({ oaiKey, setOaiKey }) {
       setOaiKey("") // Clear the oaiKey state if not valid
     }
   }, [inputOaiKey])
-  
+
   const oaiKeyClassName = clsx(
     "placeholder:text-current border-current border-1 rounded-lg container flex flex-col gap-6 py-8 max-w-[15rem] md:max-w-[20rem] md:py-12 lg:py-5 mt-5",
     {
@@ -53,7 +54,7 @@ export function OpenaiAPIKeyInput({ oaiKey, setOaiKey }) {
       >
         Open AI API Key:
       </label>
-      <input
+      <Input
         type="text"
         id="oaikey"
         placeholder="Enter Key Here."
