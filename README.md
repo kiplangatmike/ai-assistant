@@ -16,7 +16,7 @@ The motivation behind this project was a perceived complexity in existing templa
 
 ```bash
 git clone https://github.com/kiplangatmike/ai-assistant.git
-
+```
 2. Navigate to the cloned folder.
 
 ```bash
