@@ -7,12 +7,12 @@ import {
   CardTitle,
 } from "@/components/card"
 
-export function AssistantChatCard({ text = "Hi, how can I help you?" }) {
+export function UserChatCard({ text = "" }) {
   return (
-    <div className="mb-[25px] ml-[25px] mt-[20px]">
+    <div className="mb-[25px] mr-[25px] mt-[20px] flex items-end justify-end">
       <Card className="w-[350px]">
         <CardHeader>
-          <CardTitle>Assistant</CardTitle>
+          <CardTitle>User</CardTitle>
           <CardDescription>{text}</CardDescription>
         </CardHeader>
       </Card>
