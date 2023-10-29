@@ -21,19 +21,20 @@ interface Props {
 }
 
 export const MessageInput: React.FC<Props> = ({
-    isDisabled,
-    isLoading,
-    inputText,
-    handleKeyDown,
-    handleSendMessage,
-    setInputText,
-  }) => {
-    const placeholder = isDisabled ? "Please enter your OpenAI key above." :
-    "Type message here."
+  isDisabled,
+  isLoading,
+  inputText,
+  handleKeyDown,
+  handleSendMessage,
+  setInputText,
+}) => {
+  const placeholder = isDisabled
+    ? "Please enter your OpenAI key above."
+    : "Type message here."
 
-    return (
-        <div>
-             <TextArea
+  return (
+    <div className="relative mb-20 mt-[5px]">
+      <TextArea
         className="w-[100%]"
         placeholder={placeholder}
         value={inputText}
@@ -42,12 +43,12 @@ export const MessageInput: React.FC<Props> = ({
         disabled={isDisabled || isLoading}
       />
       <Button
-        className="ml-[20px] w-[15%]"
+        className="absolute mt-[5px] w-[15%]"
         onClick={handleSendMessage}
         disabled={isDisabled || isLoading}
       >
         Send
       </Button>
-        </div>
-    )
-  }
+    </div>
+  )
+}

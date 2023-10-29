@@ -18,7 +18,7 @@ export const ChatWindow: React.FC<ChatWindowProps> = ({
   scrollAreaRef,
 }) => {
   return (
-    <ScrollArea className="mt-[100px] h-[800px] w-[800px] rounded-md border">
+    <ScrollArea className="mt-[100px] h-[500px] w-[800px] rounded-md border">
       <div className="mt-[25px] flex items-center justify-center">
         <h1 className="text-3xl font-bold">AI Assitant</h1>
       </div>

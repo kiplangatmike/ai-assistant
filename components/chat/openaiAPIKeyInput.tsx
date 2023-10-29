@@ -6,16 +6,16 @@ import { Input } from "../input"
 
 //@ts-ignore
 export function OpenaiAPIKeyInput({ oaiKey, setOaiKey }) {
-  const [inputOaiKey, setInputOaiKey] = useState("") // local state to handle user input
-  const [oaiKeyFocus, setOaiKeyFocus] = useState(false) // New state to track if the input is focused
-  const [oaiKeyValueDisplayed, setOaiKeyValueDisplayed] = useState("") // New state to hold the displayed value
+  const [inputOaiKey, setInputOaiKey] = useState("")
+  const [oaiKeyFocus, setOaiKeyFocus] = useState(false)
+  const [oaiKeyValueDisplayed, setOaiKeyValueDisplayed] = useState("")
   const [isKeyValid, setIsKeyValid] = useState(false)
 
   useEffect(() => {
     if (oaiKeyFocus) {
-      setOaiKeyValueDisplayed(inputOaiKey) // If the input is focused, show the real key
+      setOaiKeyValueDisplayed(inputOaiKey)
     } else {
-      setOaiKeyValueDisplayed(inputOaiKey.replace(/./g, "*")) // If the input is not focused, replace all characters with *
+      setOaiKeyValueDisplayed(inputOaiKey.replace(/./g, "*"))
     }
   }, [inputOaiKey, oaiKeyFocus])
 
@@ -26,20 +26,20 @@ export function OpenaiAPIKeyInput({ oaiKey, setOaiKey }) {
         .then((data) => {
           setIsKeyValid(data.status)
           if (data.status === true) {
-            setOaiKey(inputOaiKey) // Set the oaiKey state if valid
+            setOaiKey(inputOaiKey)
           } else {
-            setOaiKey("") // Clear the oaiKey state if not valid
+            setOaiKey("")
           }
         })
         .catch((error) => console.error("Error:", error))
     } else {
       setIsKeyValid(false)
-      setOaiKey("") // Clear the oaiKey state if not valid
+      setOaiKey("")
     }
   }, [inputOaiKey])
 
   const oaiKeyClassName = clsx(
-    "placeholder:text-current border-current border-1 rounded-lg container flex flex-col gap-6 py-8 max-w-[15rem] md:max-w-[20rem] md:py-12 lg:py-5 mt-5",
+    "placeholder:text-current border-current border-1 rounded-lg py-8 max-w-[25rem] md:max-w-[30rem] md:py-12 lg:py-5 mt",
     {
       "bg-green-400": isKeyValid,
       "bg-red-300": !isKeyValid,
@@ -47,10 +47,10 @@ export function OpenaiAPIKeyInput({ oaiKey, setOaiKey }) {
   )
 
   return (
-    <div className="mb-[-50px] mt-[25px] flex">
+    <div className=" mt-[25px] flex gap-5">
       <label
         htmlFor=""
-        className="-mb-5 ml-[-110px] flex items-center justify-center font-bold  md:ml-[-190px]"
+        className="flex items-center justify-center font-bold"
       >
         Open AI API Key:
       </label>
