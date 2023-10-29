@@ -1,10 +1,11 @@
-# NEXT.JS + LangChain Chat Starter Kit
+# LangChain Chat Starter Kit
 
 The motivation behind this project was a perceived complexity in existing templates and starter kits for langchain chatbots. With a desire for simplicity, I've constructed this kit as an antidote to that complexity! This project serves as a foundation or a source of inspiration for your own endeavors.
 
 ## Images
 <center>
-<img src="https://i.imgur.com/5RHXcQj.jpg" width='550px'>
+![Screenshot 2023-10-29 231725](https://github.com/kiplangatmike/ai-assistant/assets/90445062/9e15fbf9-ada3-45a9-9f49-119fc900fd66)
+
 <br></br>
 <img src="https://i.imgur.com/B0sJyiG.jpg" width='550px'>
 </center>
