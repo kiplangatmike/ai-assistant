@@ -4,12 +4,9 @@ The motivation behind this project was a perceived complexity in existing templa
 
 ## Images
 <center>
-![Screenshot 2023-10-29 231725](https://github.com/kiplangatmike/ai-assistant/assets/90445062/9e15fbf9-ada3-45a9-9f49-119fc900fd66)
-
-
+<img src="https://i.imgur.com/v4dgeVE.png" width='550px'>
 <br></br>
 <img src="https://i.imgur.com/JOSpVqV.png" width='550px'>
-![stack Overflow](https://imgur.com/JOSpVqV)
 </center>
 
 ## Installation
