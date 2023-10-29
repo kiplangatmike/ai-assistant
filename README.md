@@ -15,8 +15,7 @@ The motivation behind this project was a perceived complexity in existing templa
 1. Clone this repo via git to use the components.
 
 ```bash
-git clone https://github.com/JohnRSandoval/NEXT.JS-LangChain-Starter-Kit.git
-```
+git clone https://github.com/kiplangatmike/ai-assistant.git
 
 2. Navigate to the cloned folder.
 
