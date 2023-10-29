@@ -7,7 +7,7 @@ The motivation behind this project was a perceived complexity in existing templa
 ![Screenshot 2023-10-29 231725](https://github.com/kiplangatmike/ai-assistant/assets/90445062/9e15fbf9-ada3-45a9-9f49-119fc900fd66)
 
 <br></br>
-<img src="https://i.imgur.com/B0sJyiG.jpg" width='550px'>
+<img src="https://" width='550px'>
 </center>
 
 ## Installation
