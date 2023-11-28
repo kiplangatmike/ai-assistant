@@ -1,12 +1,12 @@
-# NEXT.JS + LangChain Chat Starter Kit
+# AI Assistant using LangChain Chat (Starter)
 
 The motivation behind this project was a perceived complexity in existing templates and starter kits for langchain chatbots. With a desire for simplicity, I've constructed this kit as an antidote to that complexity! This project serves as a foundation or a source of inspiration for your own endeavors.
 
 ## Images
 <center>
-<img src="https://i.imgur.com/5RHXcQj.jpg" width='550px'>
+<img src="https://i.imgur.com/v4dgeVE.png" width='550px'>
 <br></br>
-<img src="https://i.imgur.com/B0sJyiG.jpg" width='550px'>
+<img src="https://i.imgur.com/JOSpVqV.png" width='550px'>
 </center>
 
 ## Installation
@@ -14,13 +14,12 @@ The motivation behind this project was a perceived complexity in existing templa
 1. Clone this repo via git to use the components.
 
 ```bash
-git clone https://github.com/JohnRSandoval/NEXT.JS-LangChain-Starter-Kit.git
+git clone https://github.com/kiplangatmike/ai-assistant.git
 ```
-
 2. Navigate to the cloned folder.
 
 ```bash
-cd NEXT.JS-LangChain-Starter-Kit
+cd ai-assistant
 ```
 
 3. Use your preferred package manager to install packages.
