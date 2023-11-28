@@ -10,9 +10,9 @@ export function ChatBox() {
   const currentTime = new Date().getHours();
   let greeting;
   if (currentTime < 12) {
-    greeting = "Good morning! What can I do for you today?";
+    greeting = "Good morning! What can I do for you today...?";
   } else if (currentTime < 18) {
-    greeting = "Good afternoon! What can I do for you today?";
+    greeting = "Good afternoon! What can I do for you today...?";
   } else {
     greeting = "Good evening! What can I do for you today?";
   }
